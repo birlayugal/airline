@@ -5,6 +5,7 @@ jobs:
     test_project:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout repository
             - uses: actions/checkout@v2
             - name: Run django unit tests
             run:
